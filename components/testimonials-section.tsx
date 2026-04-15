@@ -127,7 +127,7 @@ export function TestimonialsSection() {
           <div className="flex items-center justify-center gap-4 mt-8">
             <button
               onClick={goPrev}
-              className="w-10 h-10 rounded-full border border-border bg-white flex items-center justify-center hover:border-primary hover:text-primary transition-colors"
+              className="w-10 h-10 rounded-full border border-border bg-white flex items-center justify-center hover:border-primary hover:text-primary transition-colors cursor-pointer"
               aria-label="Anterior"
             >
               <ChevronLeft size={18} />
@@ -140,7 +140,7 @@ export function TestimonialsSection() {
                   key={i}
                   onClick={() => goTo(i)}
                   className={cn(
-                    "rounded-full transition-all duration-300",
+                    "rounded-full transition-all duration-300 cursor-pointer",
                     i === active ? "w-6 h-2.5 bg-primary" : "w-2.5 h-2.5 bg-primary/30 hover:bg-primary/60"
                   )}
                   aria-label={`Reseña ${i + 1}`}
@@ -150,7 +150,7 @@ export function TestimonialsSection() {
 
             <button
               onClick={goNext}
-              className="w-10 h-10 rounded-full border border-border bg-white flex items-center justify-center hover:border-primary hover:text-primary transition-colors"
+              className="w-10 h-10 rounded-full border border-border bg-white flex items-center justify-center hover:border-primary hover:text-primary transition-colors cursor-pointer"
               aria-label="Siguiente"
             >
               <ChevronRight size={18} />

@@ -81,7 +81,7 @@ export function AboutSection() {
                 href="https://wa.me/50672738067"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-medium px-8 py-4 rounded-full text-sm transition-all duration-300 hover:scale-105 hover:bg-rose-dark shadow-md"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-medium px-8 py-4 rounded-full text-sm transition-all duration-300 hover:scale-105 hover:bg-rose-dark shadow-md cursor-pointer"
               >
                 Conoce nuestros servicios
               </a>

@@ -56,7 +56,7 @@ export function ContactSection() {
                   href="https://wa.me/50672738067?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20la%20direcci%C3%B3n%20exacta"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary text-sm font-medium hover:underline mt-1 inline-block font-sans"
+                  className="text-primary text-sm font-medium hover:underline mt-1 inline-block font-sans cursor-pointer"
                 >
                   Consultar dirección exacta →
                 </a>
@@ -90,7 +90,7 @@ export function ContactSection() {
                 <h3 className="font-serif text-lg font-medium text-foreground mb-1">Teléfono</h3>
                 <a
                   href="tel:+50672738067"
-                  className="text-foreground font-sans text-base hover:text-primary transition-colors"
+                  className="text-foreground font-sans text-base hover:text-primary transition-colors cursor-pointer"
                 >
                   7273-8067
                 </a>
@@ -120,13 +120,13 @@ export function ContactSection() {
                   href="https://wa.me/50672738067"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 bg-white text-primary font-medium px-6 py-3.5 rounded-full text-sm text-center hover:bg-white/90 transition-colors shadow-sm"
+                  className="flex-1 bg-white text-primary font-medium px-6 py-3.5 rounded-full text-sm text-center hover:bg-white/90 transition-colors shadow-sm cursor-pointer"
                 >
                   Agendar por WhatsApp
                 </a>
                 <a
                   href="tel:+50672738067"
-                  className="flex-1 border border-white/40 text-white font-medium px-6 py-3.5 rounded-full text-sm text-center hover:bg-white/10 transition-colors"
+                  className="flex-1 border border-white/40 text-white font-medium px-6 py-3.5 rounded-full text-sm text-center hover:bg-white/10 transition-colors cursor-pointer"
                 >
                   Llamar: 7273-8067
                 </a>
