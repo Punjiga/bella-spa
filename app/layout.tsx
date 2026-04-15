@@ -17,6 +17,7 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://bella-spa.vercel.app'),
   title: "Bella'Spa — Estudio de Belleza Premium en Cartago, Costa Rica",
   description: 'Expertos en extensiones de pestañas, diseño de cejas, uñas en gel y depilación. Agenda tu cita en Cartago. Transforma tu belleza en Bella\'Spa. ✨',
   keywords: 'spa cartago, estudio de belleza, pestañas, cejas, uñas gel, depilación, costa rica',
