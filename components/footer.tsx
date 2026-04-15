@@ -135,7 +135,7 @@ export function Footer() {
         {/* Divider */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-xs font-sans">
-            &copy; {currentYear} Bella&apos;Spa. Todos los derechos reservados.
+            &copy; {currentYear}{' '}Bella&apos;Spa. Todos los derechos reservados.
           </p>
           <a
             href="https://srstudio.vercel.app/"
