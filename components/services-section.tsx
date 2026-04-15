@@ -81,7 +81,7 @@ export function ServicesSection() {
             <div
               key={service.id}
               ref={(el) => { cardRefs.current[i] = el }}
-              className={`reveal reveal-delay-${i + 1} group relative bg-card rounded-3xl overflow-hidden shadow-sm border border-border hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500 cursor-pointer`}
+              className={`reveal reveal-delay-${i + 1} group relative bg-card rounded-3xl overflow-hidden shadow-sm border border-border hover:shadow-xl transition-all duration-300 cursor-pointer`}
               role="article"
               tabIndex={0}
               aria-label={`${service.title}: ${service.description}`}

@@ -20,9 +20,15 @@ const services = [
 ]
 
 export function Footer() {
+  const currentYear = new Date().getFullYear()
+  
   const handleNavClick = (href: string) => {
     const el = document.querySelector(href)
     if (el) el.scrollIntoView({ behavior: "smooth" })
+  }
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
   return (
@@ -32,7 +38,11 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="mb-4 flex items-center gap-3">
+            <button
+              onClick={scrollToTop}
+              className="mb-4 flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity"
+              aria-label="Ir al inicio"
+            >
               <Logo size="md" />
               <div>
                 <span className="font-serif text-lg font-semibold text-primary tracking-wide">
@@ -42,7 +52,7 @@ export function Footer() {
                   Estudio de Belleza
                 </p>
               </div>
-            </div>
+            </button>
             <p className="text-white/60 text-sm font-sans leading-relaxed mb-6">
               Tu lugar de confianza en Cartago para lucir y sentirte increíble. Pestañas, cejas, uñas y más.
             </p>
@@ -125,7 +135,7 @@ export function Footer() {
         {/* Divider */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-xs font-sans">
-            &copy; {new Date().getFullYear()} Bella&apos;Spa. Todos los derechos reservados.
+            &copy; {currentYear} Bella&apos;Spa. Todos los derechos reservados.
           </p>
           <a
             href="https://srstudio.vercel.app/"

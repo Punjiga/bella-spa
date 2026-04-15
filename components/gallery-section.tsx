@@ -64,14 +64,14 @@ export function GallerySection() {
               )}
               style={{ transitionDelay: `${i * 0.08}s` }}
             >
-              <div className={cn("relative w-full", i === 0 ? "h-[400px] md:h-[520px]" : "h-48 md:h-60")}>
+              <div className={cn("relative w-full overflow-hidden", i === 0 ? "h-[400px] md:h-[520px]" : "h-48 md:h-60")}>
                 <Image
                   src={img.src}
                   alt={img.alt}
                   fill
                   className="object-cover object-center group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                   <span className="text-white text-xs tracking-widest uppercase font-sans">{img.category}</span>
                 </div>
